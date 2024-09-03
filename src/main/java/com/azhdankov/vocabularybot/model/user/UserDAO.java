@@ -1,8 +1,8 @@
-package com.azhdankov.vocabularybot;
+package com.azhdankov.vocabularybot.model.user;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
 @Component
-public interface UserDao extends CrudRepository<UserInfo, String> {
+public interface UserDAO extends CrudRepository<User, String> {
 }

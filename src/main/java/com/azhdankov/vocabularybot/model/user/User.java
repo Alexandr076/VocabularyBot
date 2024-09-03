@@ -1,4 +1,4 @@
-package com.azhdankov.vocabularybot;
+package com.azhdankov.vocabularybot.model.user;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,9 +13,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "USERINFO")
-public class UserInfo {
+@Table(name = "users")
+public class User {
     @Id
     private String chatID;
-    private String password;
+    private String token;
+    private String replyToCommand;
+    private String email;
 }
